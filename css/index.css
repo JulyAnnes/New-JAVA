@@ -1,0 +1,194 @@
+.content {
+	width: 100%;
+	height: 1600px;
+}
+.content .blogroll {
+	width: 100%;
+	height: 50px;
+	background-color: #008CC8;
+}
+.content .blogroll ul {
+	list-style-type: none;
+}
+.content .blogroll li {
+	float: left;
+	text-align: center;
+	line-height: 50px;
+}
+.content .blogroll li a {
+	width: 120px;
+	font-size: 16px;
+	display: block;
+	color: #FFFFFF;
+	text-align: center;
+}
+.content .blogroll li a:hover {
+	background-color: #3399CC;
+} 
+.content .big_banner { 
+	width: 100%;
+	height: 425px;
+	background-color: #080808;
+	position: relative;	
+}
+.content .big_banner .rank_list {
+    position: absolute;
+    top: 0;
+    right: 0;
+	width: 300px;
+	height: 425px;
+	background-color: #272828;
+}
+.content .big_banner .rank_list  .rank_top {
+	width: 100%;
+	height: 40px;
+	background-color: #404040;
+}
+.big_banner .rank_list  .rank_top h3 {
+	width: 200px;
+	margin-left: 50px;
+	color: #FFFFFF;
+	font: 400 14px/40px "微软雅黑";
+}
+.content .big_banner .rank_list .rank_bottom {
+	width: 100%;
+	height: 345px;
+	padding: 20px 0;
+}
+.content .big_banner .rank_list .rank_bottom li {
+	width: 100%;
+	padding-left: 10px;
+	height: 34px;
+}
+.content .big_banner .rank_list .rank_bottom li a{
+	display: block;
+	width: 100%;
+	height: 29px;
+	padding-top: 5px;
+}
+.content .big_banner .rank_list .rank_bottom i.hot_course {
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	background-color: orange;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 20px;
+	margin-top: 3px;
+}
+.content .big_banner .rank_list .rank_bottom i.hot_course2 {
+	display: block;
+	float: left;
+	width: 19px;
+	height: 19px;
+	border: 1px solid #6f6f6f;
+	color: #999;
+	text-align: center;
+	line-height: 20px;
+	margin-top: 3px;
+}
+.content .big_banner .rank_list .rank_bottom li span {
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 20px;
+	font-size: 14px;
+	color: #999;
+}
+.current {
+	background-color: #404040 !important;
+}
+.content .big_banner .rank_list .rank_bottom li span.into_course {
+	float: right;
+	padding-right: 30px;
+	font-size: 12px;
+}
+.content .big_banner .bc_pic_place {
+	height: 425px;
+	background: url(../img/index_banner/banner1.jpeg) no-repeat;
+	position: relative;
+}
+.content .big_banner .box_list {
+	width: 700px;
+	height: 50px;
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	margin-left: -350px;
+}
+.content .big_banner .box_list li {
+	width: 74px;
+	height: 49px;
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.content .big_banner .box_list img {
+	width: 74px;
+	height: 49px;
+}
+
+/*courses*/
+.content .courses_bottom {
+	width: 100%;
+	height: 600px;
+}
+.content .courses_bottom .notice {
+	height: 50px;
+	overflow: hidden;
+}
+.content .courses_bottom .notice h3 {
+	text-align: left;
+	font-size: 14px;
+	line-height: 50px;
+}
+.content .courses_bottom .notice h3 span {
+	color: #C81623;
+}
+.content .courses_bottom .course_plan {
+	height: 600px;
+}
+.content .courses_bottom .course_plan .plan_title {
+	height: 50px;
+	font-size: 24px;
+	line-height: 50px;
+	color: #333;
+	font-weight: bold;
+}
+.content .courses_bottom .course_plan .plan_list {
+	margin-top: 10px;
+}
+.content .courses_bottom .course_plan .plan_list li{
+	float: left;
+	margin-right: 83px;
+	margin-bottom: 30px;
+}
+.content .courses_bottom .course_plan .plan_list li.last {
+	margin-right: 0;
+}
+.content .courses_bottom .course_plan .plan_list li a{
+	width: 240px;
+	height: 200px;
+}
+.content .courses_bottom .course_plan .plan_list li a:hover {
+	color: #1FAD4E;
+}
+.content .courses_bottom .course_plan .plan_list li span.pic{
+	display: block;
+	overflow: hidden;
+	width: 240px;
+	height: 134px;
+}
+.course_plan .plan_list li a h3 {
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 20px;
+}
+.content .courses_bottom .course_plan .plan_list .sug_course {
+	width: 1210px;
+	height: 300px;
+	background-color: pink;
+}
+/*end*/

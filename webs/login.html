@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Java自主学习平台-登陆\注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		<link rel="shortcut icon"  href="favicon.png"/>
+		<script type="text/javascript">
+			window.onload =function(){
+				var btns = document.getElementById("lo_t").getElementsByTagName("button");
+				var divs = document.getElementById("lo_b").getElementsByTagName("div");
+				for(var i=0;i<btns.length;i++)
+				{
+					btns[i].index = i;
+					btns[i].onclick = function(){
+						
+						for(var j=0;j<btns.length;j++)
+						{
+							btns[j].className = "";
+						}
+						this.className = "current";
+						for(var i=0;i<divs.length;i++)
+					    {
+						    divs[i].style.display = "none";
+				        }
+					    divs[this.index].style.display = "block";
+					}
+				}
+				
+				
+				function $(id){return document.getElementById(id);}
+				$("zh").oninput = $("zh").onpropertychange =  function(){
+					if(this.value == "")
+					{
+						$("dispre").style.display = "block";
+					}
+					else
+					{
+						$("dispre").style.display = "none";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="header ">
+			<div class="w">
+				<div class="header_left ">
+			         <ul>
+			         	<li><a href="index.html"><img src="../img/title.png"/></a></li>
+			         	<li><a href="index.html">首页</a></li>
+			         	<li><i></i></li>
+			         	<li><a href="">特色课</a</li>
+			         	<li><i></i></li>
+			         	<li><a href="">公开课</a></li>
+			         	<li><i></i></li>
+			         	<li class="sp_last"><a href="login.html">登陆</a></li>
+			         	<li class="sp_last"><a href="login.html">注册</a></li>
+			         </ul>
+			   </div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="main_login">
+				<div class="login_top" id="lo_t">
+					<button class="btn1_bt">登陆</button><button>注册</button>
+				</div>
+				<div class="login_bottom" id="lo_b">
+					<div style="display: block;" class="dl_divs">
+						<form action="" method="post" class="dl_part">
+							 <p class="dl_ft1">欢迎登陆本网站，若您为未有本网站会员，</p>
+                             <p class="dl_ft1">请点击右上角注册</p>
+                             <p class="dl_ft2"></p>
+							<p>
+	       	          	        <i class="bc_icon1"></i>
+		                        <input type="text" id="zh" name="zh" /><label for="zh" id="dispre" class="input_zh">请输入账号...</label>
+		                    </p>
+		                    <p>
+		                        <i class="bc_icon2"></i>                         
+		                        <input type="password" id="mima" name="mima" /> 
+		                    </p>
+                             <p>
+                             	<button>登陆</button>
+                             </p>
+
+						</form>
+					</div>
+					<div class="zc_divs">
+							<form action="" method="post" class="zc_part">
+								<p class="zc_title1">亲爱的用户欢迎注册本网站</p>
+								<p class="zc_title2">请填写以下信息</p>
+								<p class="dl_ft2"></p>
+								<p> 
+									<label for="username" class="zhzc">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号:</label>
+									<input type="text" value="" name="username" id="username"/>
+								</p>
+								<p>
+									<label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:</label>
+									<input type="text" name="password" id="password" value="" />
+								</p>
+								<p>
+									<label for="name">用&nbsp;&nbsp;户&nbsp;&nbsp;名:</label>
+									<input type="text" name="name" id="name" value="" />
+								</p>
+								<p>
+									<label for="setpassword">设置密码:</label>
+									<input type="text" name="setpassword" id="setpassword" value="" />
+								</p >
+								<p>
+									<label for="confirmpassword">确认密码:</label>
+									<input type="text" name="confirmpassword" id="confirmpassword" value="" />
+								</p>
+								<p class="zc_yz">
+									<label for="sumitnub">验&nbsp;&nbsp;证&nbsp;码:</label>
+									<input type="text" name="sumitnubd" id="sumitnub" value="" />
+								</p>
+								<p>
+								    <button>注册</button>
+								</p>
+							</form>
+						<!--学号密码账号新密码确认密码-->
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer"></div>
+	</body>
+</html>

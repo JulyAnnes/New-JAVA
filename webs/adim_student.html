@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/adim_student.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"/>
+		<link rel="shortcut icon" href="favicon.png"/>
+		<script type="text/javascript">
+			window.onload = function(){
+			    var modify_per=document.getElementById("modify_per");
+				var modify_page=document.getElementById("modify_page");
+				var xmodify=document.getElementById("xmodify");
+				var class_all=document.getElementById("class_all");
+				modify_per.onclick=function(){
+					modify_page.style.display="block";
+					xmodify.style.display="block";
+				}
+				class_all.onclick=function(){
+					modify_page.style.display="none";
+					xmodify.style.display="none";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="modify_page1" id="modify_page"></div>
+		<div class="xmodify" id="xmodify">
+			<div class="head_title">
+				编辑个人信息
+			</div>
+			<span id="class_all">
+				<i class="fa fa-close (alias)"></i>
+			</span>
+			<div class="xmodify_bot">
+				<form action="" method="post">
+					<p>
+						<label for="name">昵称:&nbsp;&nbsp;</label>
+						<input type="text" name="name" id="name" value="" class="tex_names" />
+					</p>
+					<p>
+						<label for="job">职位:&nbsp;&nbsp;</label>
+						<select class="se_jb">
+							<option value="">学生</option>
+							<option value="">教职工</option>
+						</select>
+					</p>
+					<p>
+						<label for="name">地区:&nbsp;&nbsp;</label>
+						<select class="sl_area">
+							 <option value="1">北京</option>
+                                <option value="2">天津</option>
+                                <option value="3">河北</option>
+                                <option value="4">山西</option>
+                                <option value="5">内蒙古</option>
+                                <option value="6">辽宁</option>
+                                <option value="7">吉林</option>
+                                <option value="8">黑龙江</option>
+                                <option value="9">上海</option>
+                                <option value="10">江苏</option>
+                                <option value="11">浙江</option>
+                                <option value="12">安徽</option>
+                                <option value="13">福建</option>
+                                <option value="14">江西</option>
+                                <option value="15">山东</option>
+                                <option value="16" selected="selected">河南</option>
+                                <option value="17">湖北</option>
+                                <option value="18">湖南</option>
+                                <option value="19">广东</option>
+                                <option value="20">海南</option>
+                                <option value="21">广西</option>
+                                <option value="22">甘肃</option>
+                                <option value="23">陕西</option>
+                                <option value="24">新疆</option>
+                                <option value="25">青海</option>
+                                <option value="26">宁夏</option>
+                                <option value="27">重庆</option>
+                                <option value="28">四川</option>
+                                <option value="29">贵州</option>
+                                <option value="30">云南</option>
+                                <option value="31">西藏</option>
+                                <option value="32">台湾</option>
+                                <option value="33">澳门</option>
+                                <option value="34">香港</option>
+                                <option value="100">其他</option>
+						</select>
+					</p>
+					<p>
+						<label for="sex">性别:&nbsp;&nbsp;</label>
+						<input type="radio" name="sex" checked="checked" id="sex" value="male" class="ra_sex" />男
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="sex"  id="sex" value="female" class="ra_sex" />女
+					</p>
+					<p>
+						<input type="submit" value="确定" name="submit" class="btn_sub" />
+						<input type="submit" value="取消" name="reset" class="btn_can" />
+					</p>
+				</form>
+			</div>
+		</div>
+		<div class="header ">
+			<div class="w">
+				<div class="header_left ">
+			         <ul>
+			         	<li><a href="index.html"><img src="../img/title.png"/></a></li>
+			         	<li><a href="index.html">首页</a></li>
+			         	<li><i></i></li>
+			         	<li><a href="">特色课</a</li>
+			         	<li><i></i></li>
+			         	<li><a href="">公开课</a></li>
+			         	<li><i></i></li>
+			         	<li class="sp_last"><a href="login.html">登陆</a></li>
+			         	<li class="sp_last"><a href="login.html">注册</a></li>
+			         </ul>
+			   </div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="conten_toptop">
+		        <div class="conten_top w">
+				    <div class="logo_login">
+			 	    	<img src="../img/user avater.jpeg" alt="" />
+			    	</div>
+			    	<div class="user_idmessage">
+			    		<h3 class="us_id">这是一个用户ID</h3>
+			    		<p class="mes_various">
+			    			<span>性别</span><span>省份</span><span>市级</span><span>身份</span>
+			    		</p>
+			    	</div>
+			    	<div class="study_mes">
+			    		<div class="st_sc stu">
+			    			<em>1080h</em>
+			    			<span>学习时长</span>
+			    		</div>
+			    		<div class="st_jy stu">
+			    			<em>2484</em>
+			    			<span>经验</span>
+			    		</div>
+			    		<div class="st_jf stu">
+			    			<em>4</em>
+			    			<span>积分</span>
+			    		</div>
+			    		<div class="st_gz stu">
+			    			<em>2</em>
+			    			<span>关注</span>
+			    		</div>
+			    		<div class="st_gr stu">
+			    			<a href="adim_student.html">个人中心</a>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="conten_bottom w">
+			    	<div class="ctn_bto_left">
+			    		<ul>
+			    			<li>
+			    				<a href="index.html">
+			    					<i class="fa fa-bank"></i>	
+			    			                    主页
+			    				</a>
+			    		    </li>
+			    			<li>
+			    				<a href="adim_student.html">
+			    					<i class="fa fa-user-circle"></i>
+			    			                    个人中心          
+			    				</a>
+			    			</li>
+			    			<li>
+			    				<a href="adim_student_course.html">
+			    					<i class="fa fa-book"></i>
+			    			                    课程  
+			    				</a></li>
+			    			<li>
+			    				<a href="coding.html">
+			    					<i class="fa fa-pencil"></i>
+			    			                    个人编程         
+			    				</a></li>
+			    		</ul>
+			    	</div>
+			    	<div class="ctn_bto_right">
+			    		<div class="ctn_bt_rt">
+			    			<div class="com_title">
+			    				个人信息
+			    				<a href="#" id="modify_per"><i class="fa fa-gear (alias)"></i>修改</a>
+			    			</div>
+			    		</div>
+			    		<div class="ctn_bt_rb">
+			    			<div class="info_box">
+			    				<label class="pull_left">昵称</label>
+			    				<div class="pull_right">这是一个昵称</div>
+			    			</div>
+			    			<div class="info_box">
+			    				<label class="pull_left">职位</label>
+			    				<div class="pull_right">学生 / 教师</div>
+			    			</div>
+			    			<div class="info_box">
+			    				<label class="pull_left">城市</label>
+			    				<div class="pull_right">河南</div>
+			    			</div>
+			    			<div class="info_box">
+			    				<label class="pull_left">性别</label>
+			    				<div class="pull_right">男 / 女</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>
+			   
+			</div>
+		</div>
+	</body>
+</html>

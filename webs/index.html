@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="shortcut icon" href="favicon.png"/>
+		<script type="text/javascript">
+			window.onload = function(){
+				/*背景图片*/
+				function $id(id){return document.getElementById(id);}
+				$id("pic1").onmouseover = function(){
+					$id("bc_color").style.backgroundColor = "#080808";
+					$id("bc_pic").style.backgroundImage = "url(../img/index_banner/banner1.jpeg)";
+				}
+				$id("pic2").onmouseover = function(){
+					$id("bc_color").style.backgroundColor = "#1E1D22";
+					$id("bc_pic").style.backgroundImage = "url(../img/index_banner/banner2.jpeg)";
+				}
+				$id("pic3").onmouseover = function(){
+					$id("bc_color").style.backgroundColor = "#050505";
+					$id("bc_pic").style.backgroundImage = "url(../img/index_banner/banner3.jpeg)";
+				}
+				$id("pic4").onmouseover = function(){
+					$id("bc_color").style.backgroundColor = "#090909";
+					$id("bc_pic").style.backgroundImage = "url(../img/index_banner/banner4.jpeg)";
+				}
+				$id("pic5").onmouseover = function(){
+					$id("bc_color").style.backgroundColor = "#03070A";
+					$id("bc_pic").style.backgroundImage = "url(../img/index_banner/banner5.jpeg)";
+				}
+				$id("pic6").onmouseover = function(){
+					$id("bc_color").style.backgroundColor = "#080705";
+					$id("bc_pic").style.backgroundImage = "url(../img/index_banner/banner6.jpeg)";
+				}
+				$id("pic7").onmouseover = function(){
+					$id("bc_color").style.backgroundColor = "#040406";
+					$id("bc_pic").style.backgroundImage = "url(../img/index_banner/banner7.jpeg)";
+				}
+		/*背景图片*/	
+				
+				
+				
+				
+				
+				/*课程列表*/
+				var lis = document.getElementById("list_lis").getElementsByTagName("li");
+			    for(var i=0;i<lis.length;i++)
+			    {
+			    	lis[i].onmouseover = function(){
+			    		this.className = "current";
+			    	}
+			    	lis[i].onmouseout = function(){
+			    		this.className = "";
+			    	}
+			    }
+			   	/*课程列表*/
+			}
+		</script>
+	</head>
+	<body>
+		<div class="header ">
+			<div class="w">
+				<div class="header_left ">
+			         <ul>
+			         	<li><a href="index.html"><img src="../img/title.png"/></a></li>
+			         	<li><a href="index.html">首页</a></li>
+			         	<li><i></i></li>
+			         	<li><a href="">特色课</a</li>
+			         	<li><i></i></li>
+			         	<li><a href="">公开课</a></li>
+			         	<li><i></i></li>
+			         	<li class="sp_last"><a href="login.html">登陆</a></li>
+			         	<li class="sp_last"><a href="login.html">注册</a></li>
+			         </ul>
+			   </div>
+			</div>
+		</div>		
+	    <div class="content">
+	    	<div class="blogroll">
+	    		<div class="blo_center w">
+	    			<ul>
+	    		    	<li><a href="index.html">首页</a></li>
+	    		    	<li><a href="https://open.163.com/">网易公开课</a></li>
+	    		    	<li><a href="https://www.imooc.com/">幕课网</a></li>
+	    		    	<li><a href="https://www.icourse163.org/">中国大学MOOC</a></li>
+	    		    	<li><a href="https://www.zhihu.com/signup?next=%2F">知乎</a></li>
+	    		    	<li><a href="http://study.163.com/">网易云课堂</a></li>
+	    		    	<li><a href="adim_student.html">个人中心</a></li>
+	    		    </ul>
+	    		</div>
+	    	</div>
+	    	<div class="big_banner clearfix" id="bc_color">
+	    		<div class="w bc_pic_place" id="bc_pic">
+	    			<div class="box_list">
+	    				<ul>
+	    					<li><img src="../img/index_banner/small1.jpeg" id="pic1" /></li>
+	    					<li><img src="../img/index_banner/small2.jpeg" id="pic2" /></li>
+	    					<li><img src="../img/index_banner/small3.jpeg" id="pic3" /></li>
+	    					<li><img src="../img/index_banner/small4.jpeg" id="pic4" /></li>
+	    					<li><img src="../img/index_banner/small5.jpeg" id="pic5" /></li>
+	    					<li><img src="../img/index_banner/small6.jpeg" id="pic6" /></li>
+	    					<li><img src="../img/index_banner/small7.jpeg" id="pic7" /></li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    		<div class="rank_list">
+	    		     <div class="rank_top">
+	    		     	<h3>最新课程</h3>
+	    		     </div>
+	    		     <div class="rank_bottom" id="list_lis">
+	    		     	<ul>
+	    		     		<li>
+	    		     			<a href="">
+	    		     			    <i class="hot_course">01</i>
+	    		     			    <span>java入门</span>
+	    		     			    <span class="into_course"> 点击进入> </span>
+	    		     		    </a>
+	    		     		</li>
+	    		     		<li>
+	    		     			<a href="">
+	    		     			    <i class="hot_course">02</i>
+	    		     			    <span>java入门</span>
+	    		     			    <span class="into_course"> 点击进入> </span>
+	    		     		    </a>
+	    		     		</li>
+	    		     		<li>
+	    		     			<a href="">
+	    		     			    <i class="hot_course">03</i>
+	    		     			    <span>java入门</span>
+	    		     			    <span class="into_course"> 点击进入> </span>
+	    		     		    </a>
+	    		     		</li>
+	    		     		<li>
+	    		     			<a href="">
+	    		     			    <i class="hot_course2">04</i>
+	    		     			    <span>java入门</span>
+	    		     			    <span class="into_course"> 点击进入> </span>
+	    		     		    </a>
+	    		     		</li>
+	    		     		<li>
+	    		     			<a href="">
+	    		     			    <i class="hot_course2">05</i>
+	    		     			    <span>java入门</span>
+	    		     			    <span class="into_course"> 点击进入> </span>
+	    		     		    </a>
+	    		     		</li>
+	    		     		<li>
+	    		     			<a href="">
+	    		     			    <i class="hot_course2">06</i>
+	    		     			    <span>java入门</span>
+	    		     			    <span class="into_course"> 点击进入> </span>
+	    		     		    </a>
+	    		     		</li>
+	    		     		<li>
+	    		     			<a href="">
+	    		     			    <i class="hot_course2">07</i>
+	    		     			    <span>java入门</span>
+	    		     			    <span class="into_course"> 点击进入> </span>
+	    		     		    </a>
+	    		     		</li>
+	    		     		<li>
+	    		     			<a href="">
+	    		     			    <i class="hot_course2">08</i>
+	    		     			    <span>java入门</span>
+	    		     			    <span class="into_course"> 点击进入> </span>
+	    		     		    </a>
+	    		     		</li>
+	    		     		<li>
+	    		     			<a href="">
+	    		     			    <i class="hot_course2">09</i>
+	    		     			    <span>java入门</span>
+	    		     			    <span class="into_course"> 点击进入> </span>
+	    		     		    </a>
+	    		     		</li>
+	    		     		<li>
+	    		     			<a href="">
+	    		     			    <i class="hot_course2">10</i>
+	    		     			    <span>java入门</span>
+	    		     			    <span class="into_course"> 点击进入> </span>
+	    		     		    </a>
+	    		     		</li>
+	    		     	</ul>
+	    		     </div>
+	    	    </div>
+	    	</div>
+	        <div class="courses_bottom">
+	        	<div class="w notice">
+	        		<marquee direction="right">
+	        			<h3><span>[公告]</span>  新课堂开讲啦！</h3>
+	        		</marquee>
+	        	</div>
+	        	<div class="w course_plan">
+	        		<div class="plan_title">
+	        		    课程策划
+	        		</div>
+	        		<div class="plan_list">
+	        			<ul>
+	        				<li>
+	        					<a href="">
+	        					    <span class="pic"><img src="../img/index/course1.jpg"/></span> 
+	        					    <h3>JAVA眼中的XML-文件写入</h3>
+	        				    </a>
+	        				</li>
+	        				<li>
+	        					<a href="">
+	        					    <span class="pic"><img src="../img/index/course2.jpg"/></span> 
+	        					    <h3>JDBC之“对岸女孩看过来”</h3>
+	        				    </a>
+	        				</li>
+	        				<li>
+	        					<a href="">
+	        					    <span class="pic"><img src="../img/index/course3.jpg"/></span> 	 
+	        					    <h3>深入浅出JAVA多线程</h3>
+	        				    </a>
+	        				</li>
+	        				<li class="last">
+	        					<a href="">
+	        					    <span class="pic"><img src="../img/index/course4.jpg"/></span> 
+	        					    <h3>文件传输基础-JAVA IO流</h3>
+	        				    </a>
+	        				</li>
+	        			</ul>
+	        		</div>
+	        		<!--<div class="plan_title">
+	        		   小编推荐
+	        		</div>
+	        		<div class="sug_course">
+	        			<div class="sur_left"></div>
+	        			<div class="sur_right"></div>
+	        		</div>-->
+	        	</div>
+	        </div>
+	    </div>
+	</body>
+</html>
